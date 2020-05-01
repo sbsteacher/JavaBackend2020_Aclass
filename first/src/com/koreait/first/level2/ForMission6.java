@@ -13,6 +13,7 @@ public class ForMission6 {
 		}
 		
 		System.out.println("---------");
+		
 		for(int i=1; i<=star*star; i++) {
 			System.out.print("*");
 			if(i % star == 0) {
