@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class NumberBaseBall {
 
 	public static void main(String[] args) {
-		int gameNo = 3;
+		int gameNo = 2;
 		
 		int[] gameArr = new int[gameNo];
 		int[] myArr = new int[gameNo];
@@ -52,23 +52,9 @@ public class NumberBaseBall {
 			strike = 0;
 			ball = 0;
 		}
+		scan.close();
 		System.out.println("게임 종료!");
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
 	}
-
 }
 
 
