@@ -29,7 +29,7 @@ public class MethodTest3 {
 		for(int i=sDan; i<=eDan; i++) {			
 			printGugudan(i);			
 			System.out.println();
-		}
+		}		
 	}
 	
 	//오름차순 내림차순 ver1
@@ -40,18 +40,17 @@ public class MethodTest3 {
 				System.out.println();
 			}
 			return;
-		} 
+		}
 		for(int i=sDan; i>=eDan; i--) {			
 			printGugudan(i);			
 			System.out.println();
-		}
-			
+		}		
 	}
 	
 	//오름차순 내림차순 ver2
 	public static void printGugudan3(int sDan, int eDan) {
 		int dan = sDan;
-		int endCnt = sDan > eDan ? sDan - eDan : eDan - sDan;
+		int endCnt = (sDan > eDan) ? (sDan - eDan) : (eDan - sDan);
 		
 		for(int i=0; i<=endCnt; i++) {			
 			printGugudan(dan);
@@ -61,3 +60,10 @@ public class MethodTest3 {
 	}
 	
 }
+
+
+
+
+
+
+
