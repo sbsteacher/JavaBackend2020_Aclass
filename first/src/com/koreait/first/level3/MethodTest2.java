@@ -19,6 +19,20 @@ public class MethodTest2 {
 		float div = getMaxMinDiv(arr); //배열 최대값 나누기 최소값
 		System.out.println("div : " + div);
 	}
+	public static float getMaxMinDiv(int[] arr) {
+		int max = getMax(arr);
+		int min = getMin(arr);
+		return (float)max/min;
+	}
+	public static int getMax(int[] arr) {
+		int max = arr[0];
+		for(int i=1; i<arr.length; i++) {
+			if(max < arr[i]) {
+				max = arr[i];
+			}
+		}
+		return max;
+	}
 	public static int getMin(int[] arr) {
 		int min = arr[0];
 		for(int i=1; i<arr.length; i++) {
