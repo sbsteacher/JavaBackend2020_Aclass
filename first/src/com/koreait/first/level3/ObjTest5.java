@@ -20,10 +20,10 @@ class Random3 {
 }
  
 class Random2 {
-	int num;		
+	static int num;		
 	
 	public int getRandom() {
-		return (int)(Math.random() * num);
+		return num;
 	}
 }
 

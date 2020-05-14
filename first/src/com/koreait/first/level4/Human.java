@@ -15,16 +15,37 @@ public class Human extends Object {
 	public Human(int age) {
 		this("이순신", age);
 	}
-	
+
 	public Human(String name, int age) {
 		super();
 		this.name = name;
 		this.age = age;
-	}	
+	}
 
-	public void printMyInfo() {
-		System.out.printf("name: %s, age: %d\n"
-				, name, age);
+	public String getName() {
+		return name;
+	}
+
+	public int getAge() {
+		return age;
 	}
 	
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
 }
+
+
+
+
+
+
+
+
+
