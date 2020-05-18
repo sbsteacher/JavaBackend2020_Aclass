@@ -5,6 +5,7 @@ public class Student {
 	private int mathScore; //수학 점수
 	private int engScore; //영어 점수
 	private int korScore; //국어 점수
+	public static final int SCORE_CNT = 3;
 	
 	public Student(String name, int mathScore, int engScore, int korScore) {
 		super();
@@ -24,9 +25,14 @@ public class Student {
 	}
 	
 	public double getAvg() {
-		return (double)getSum() / 3;
+		return (double)getSum() / SCORE_CNT;
 	}
 }
+
+
+
+
+
 
 
 
