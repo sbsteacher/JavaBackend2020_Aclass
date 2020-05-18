@@ -1,9 +1,17 @@
 package com.koreait.first.level5;
 
 public class Calc {
+	public static void printSumAvg(Student[] arr) {
+		for(int i=0; i<arr.length; i++) {
+			Student stu = arr[i];			
+			stu.printScore();
+			System.out.printf(": %d %.1f\n", stu.getSum(), stu.getAvg());
+		}
+	}
+	
 	public static void printSumAvg(int[][] arr) {
-		int totalSum = 0;
-		int totalCnt = 0;
+		int totalSum = 0;	//
+		int totalCnt = 0; //
 		for(int i=0; i<arr.length; i++) {
 			int lineSum = 0;			
 			for(int z=0; z<arr[i].length; z++) {
