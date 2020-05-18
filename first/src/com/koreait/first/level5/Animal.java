@@ -4,5 +4,4 @@ public class Animal {
 	public void crying() {
 		System.out.println("울다...");
 	}
-	
 }
