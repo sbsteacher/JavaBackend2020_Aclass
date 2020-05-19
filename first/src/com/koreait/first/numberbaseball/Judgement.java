@@ -1,6 +1,7 @@
 package com.koreait.first.numberbaseball;
 
 public class Judgement {
+	
 	public static boolean isContinue(BaseBall bb, Player player) {
 		int[] bbArr = bb.getArr();
 		int[] playerArr = player.getArr();
@@ -25,3 +26,6 @@ public class Judgement {
 		return strike < bb.LENGTH;
 	}
 }
+
+
+
