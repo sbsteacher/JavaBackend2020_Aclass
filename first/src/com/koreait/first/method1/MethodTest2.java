@@ -3,13 +3,13 @@ package com.koreait.first.method1;
 class Store {
 	MacBook purchaseMacBook(Money m) {
 		switch(m.PRICE) {
-			case 3_000_000: 
-				return new MacBook(15, 3.3, 16);
-			case 2_000_000:
-				return new MacBook(13, 2.3, 8);
-			default:
-				System.out.println("맞는 금액이 없습니다.");
-				return null;
+		case 3_000_000: 
+			return new MacBook(15, 3.3, 16);
+		case 2_000_000:
+			return new MacBook(13, 2.3, 8);
+		default:
+			System.out.println("맞는 금액이 없습니다.");
+			return null;
 		}
 	}
 }
