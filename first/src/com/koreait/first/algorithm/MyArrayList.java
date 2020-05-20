@@ -13,7 +13,7 @@ public class MyArrayList {
 			temp[i] = arr[i];
 		}		
 		temp[arr.length] = val;
-		arr = temp;		
+		arr = temp;
 	}
 	
 	public void remove() {
