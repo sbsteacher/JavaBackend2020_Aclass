@@ -3,23 +3,23 @@ package com.koreait.first.abst;
 public class StarTest {
 
 	public static void main(String[] args) {
-		STank s1 = new STank();
-		Marine m1 = new Marine();		
-		Medic me1 = new Medic();		
+		STank s1 = new STank();			
 		SCV scv1 = new SCV();
+		SCV scv2 = new SCV();
 		
-		s1.setHp(10);
-		m1.setHp(10);		
+		Marine m1 = new Marine();		
+		Medic me1 = new Medic();
+		Medic me2 = new Medic();
 		
-		System.out.println(m1);
-		me1.cure(m1);
-		System.out.println(m1);
+		me1.setHp(9);
+		m1.setHp(12);
 		
-		System.out.println(s1);
-		scv1.fix(s1);
-		System.out.println(s1);
+		System.out.println(me1);
+		scv1.fix(me1);
+		System.out.println(me1);
+	
 		
-		//me1.cure(s1);
+		//
 
 	}
 
